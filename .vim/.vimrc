@@ -12,8 +12,10 @@ set directory=/tmp
 
 " Indentation settings
 set expandtab  " Replace tabs with spaces
-set softtabstop=4  " Number of spaces in a tab
+set tabstop=4  " Number of spaces in a tab
 set shiftwidth=4  " Indent size
+set softtabstop=4
+set smarttab
 set autoindent
 
 " Navigation settings
@@ -61,6 +63,9 @@ autocmd BufWrite * silent! %s/[\r \t]\+$//
 
 " Custom plugins configuration
 """"""""""""""""""""""""""""""
+
+" Activate the Vundle plugin manager
+source ~/.vim/.vimrc.vundle
 
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = '--ignore=E501'
