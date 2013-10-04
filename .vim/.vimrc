@@ -75,3 +75,5 @@ augroup sparkup_types
     autocmd!
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
+
+colorscheme solarized
