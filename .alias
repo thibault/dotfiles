@@ -1,3 +1,4 @@
 alias ack='ack-grep'
 alias st='git status'
 alias ci='git commit'
+alias phase='workon phase && cd ~/code/phase/'
