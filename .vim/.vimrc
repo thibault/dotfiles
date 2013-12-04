@@ -5,6 +5,7 @@ source ~/.vim/.vimrc.bepo
 " Let's vim, bitch!
 set nocompatible
 syntax on
+set ruler " display info on cursor position
 
 " Move backup files out of the working directory
 set backupdir=/tmp
@@ -15,7 +16,7 @@ set expandtab  " Replace tabs with spaces
 set tabstop=4  " Number of spaces in a tab
 set shiftwidth=4  " Indent size
 set softtabstop=4
-set smarttab
+set smarttab  " Use shiftwidths at left margin, tabstops everywhere else
 set autoindent
 
 " Navigation settings
@@ -26,6 +27,8 @@ set hlsearch  " Highlight search patterns
 set incsearch  " Search as we type
 set ignorecase
 set smartcase
+" Use backspace to cancel search highlighting
+nmap <silent> <BS> :nohlsearch <CR>
 
 " Formatting configuration
 """"""""""""""""""""""""""
@@ -39,13 +42,12 @@ if ! has("gui_running")
     se background=dark
 endif
 " Higlight nbsp
-highlight NbSp ctermbg=lightgray guibg=lightred
-match NbSp /\%xa0/
+exec "set listchars=trail:▓,nbsp:▓"
+set list
 
 " Remaps
 """"""""
 noremap è :w
-
 " Use ,e to edit files in same directory
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
 
