@@ -42,7 +42,7 @@ if ! has("gui_running")
     se background=dark
 endif
 " Higlight nbsp
-exec "set listchars=trail:▓,nbsp:▓"
+exec "set listchars=trail:▓,nbsp:▓,tab:»·"
 set list
 
 " Remaps
