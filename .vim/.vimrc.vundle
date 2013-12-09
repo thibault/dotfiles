@@ -8,7 +8,6 @@ Bundle 'gmarik/vundle'
 " Bundle list
 Bundle 'scrooloose/syntastic'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'hynek/vim-python-pep8-indent'
 
 " Snipmate and dependencies
@@ -16,6 +15,10 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+
+" Colorschemes
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 
 
 filetype plugin indent on
