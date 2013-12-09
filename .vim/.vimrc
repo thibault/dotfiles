@@ -78,4 +78,7 @@ augroup sparkup_types
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
 
-colorscheme solarized
+" Colorscheme configuration
+colorscheme molokai
+let g:molokai_original = 0
+set t_Co=256
