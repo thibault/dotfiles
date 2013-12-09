@@ -75,7 +75,7 @@ let g:syntastic_python_flake8_args = '--ignore=E501'
 " Activate sparkup for other filetypes
 augroup sparkup_types
     autocmd!
-  autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
+    autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
 
 " Colorscheme configuration
