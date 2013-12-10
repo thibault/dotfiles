@@ -23,4 +23,4 @@ fi
 
 export WORKON_HOME=~/.virtualenvs
 mkdir -p $WORKON_HOME
-source ~/.local/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
