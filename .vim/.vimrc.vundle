@@ -20,5 +20,10 @@ Bundle "honza/vim-snippets"
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
 
+" Javascript editing
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on

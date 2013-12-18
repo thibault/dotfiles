@@ -71,6 +71,10 @@ source ~/.vim/.vimrc.vundle
 
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = '--ignore=E501'
+let g:syntastic_javascript_checkers = ['jshint']
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+imap <C-Tab> <Plug>delimitMateS-Tab
 
 " Activate sparkup for other filetypes
 augroup sparkup_types
