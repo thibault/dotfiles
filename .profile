@@ -20,7 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
 export WORKON_HOME=~/.virtualenvs
-mkdir -p $WORKON_HOME
-source `which virtualenvwrapper.sh`
+mkdir -p /home/thibault/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
