@@ -6,6 +6,7 @@ source ~/.vim/.vimrc.bepo
 set nocompatible
 syntax on
 set ruler " display info on cursor position
+set nomousehide  " Fix invisble cursor bug
 
 " Move backup files out of the working directory
 set backupdir=/tmp
