@@ -46,11 +46,17 @@ endif
 exec "set listchars=trail:▓,nbsp:▓,tab:»·"
 set list
 
+" Gui options, remove toolbars and unnecessary widgets
+set guioptions -=m
+set guioptions -=T
+set guioptions-=r
+
 " Remaps
 """"""""
 noremap è :w
 " Use ,e to edit files in same directory
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
+noremap Q {V}gq
 
 " Autocommands
 """"""""""""""
