@@ -5,3 +5,11 @@ alias phase='workon phase && cd ~/code/phase/'
 alias kpis='workon kpis && cd ~/code/kpis/'
 alias spm='workon spm && cd ~/code/spm.hg/'
 alias raw2tiff='dcraw -v -T -6 -o 1 -q 3 -w -m 5'
+alias gt='gnome-terminal --hide-menubar'
+alias phase='sudo service postgresql start && sudo service rabbitmq-server start && sudo service memcached start && sudo service elasticsearch start'
+
+function pr() {
+    git checkout master
+    git pull --prune
+    git branch -d $1
+}

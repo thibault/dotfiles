@@ -17,7 +17,6 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
 " Colorschemes
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
 
 " Javascript editing
@@ -25,5 +24,7 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 "Bundle 'Raimondi/delimitMate'
+
+" Bundle 'bling/vim-airline'
 
 filetype plugin indent on
